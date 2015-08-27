@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../img/bg.png');
+    
+}
+
+header.header{
+    text-align: center;
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+     box-shadow: 0 0 10px 5px #CCCCCC;
+    -webkit-box-shadow: 0 0 10px 5px #CCCCCC;
+    overflow: hidden;
+    height: 117px;
+    position: relative;
+    z-index: 1;
+}
+header.header nav {
+    position: absolute;
+    top: 112px;
+    left: 30px;
+    color: #777;
+}
+
+header.header nav a{
+    color: #777;
+    margin-right: 5px;
+}
+
+#logo{
+    overflow: hidden;
+    text-align: left;
+    color: #666;
+    width: 40%;
+    float: left;
+    padding: 20px;
+}
+#logo h1{
+    margin: 0px;
+}
+#logo h1 a{
+    text-decoration: none;
+    color: #333;
+}
+@media screen and (max-width: 620px){
+    #logo{display: none;}
+}
+
+#totals{
+    overflow: hidden;
+    float: left;
+}
+#totals .chart{
+    margin-right: 10px;
+}
+.totalsChart svg{
+    height: 300px;
+    width: 400px;
+}
+.totalsChart {
+    float: left;
+}
+
+#trendChart{
+    width: auto;
+    margin-left: 825px;
+    height: 330px;
+}
+
+@media screen and (max-width: 1279px){
+    #trendChart{
+        margin-left: 0px;
+        clear: both;
+        margin-top: 20px;
+    }
+}
+
+#trendChart svg{
+    width: 100%;
+}
+
+#polarityChart svg{
+    height: 400px;
+}
+
+
+.chart header{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.chart {
+    border: 1px solid #eee;
+    background-color: white;
+}
+
+.row{
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+#trackingForm{
+    margin-top: 20px;
+    text-align: left;
+    float: left;
+}
+
+input{
+    border: 1px solid #aaa;
+    padding: 2px;
+}
+
+input.loading{
+    background-image: url("/static/img/loader.gif");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+a {color: #4183C4;}
+
+
+.infobox{
+    padding: 20px;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    background-color: white;
+}
+.txtLeft{
+    text-align: left;
+}
+
+#errorMsg {
+    text-align: center;
+}
+
+#errorMsg section{
+    margin: auto;
+    color: #d62728;
+    width: 450px;
+    background-color: #eee;
+    margin-top: -1px;
+    border: 1px solid #aaa;
+    border-top: none;
+    padding: 10px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    
+}

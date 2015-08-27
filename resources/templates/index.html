@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/static/css/smm.css" rel="stylesheet" type="text/css">
+        <title>Realtime, Twitter sentiment analysis engine</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header class="header">
+             
+             
+            <div id='logo'>
+                <h1><a href="/">HedX: Twitter Streaming Dashboard</a></h1>
+		<p>
+                <span>Realtime, Twitter sentiment analysis engine</span>
+		</p>
+            </div>
+            <form id="trackingForm" method="get" action="/results">
+                <div>
+                    <div class="txtLeft" ><strong>Searching for:</strong></div>
+                    <input type="text" name="keyword" id="keyword" placeholder="movies, companies, products" >
+                </div>
+                <div class="row">
+                    <button id="restartTracking">Start search</button>
+                </div>
+
+            </form>
+        </header>
+        
+        <div class="infobox">
+            <p>
+                --<br  />
+                <a href="http://en.wikipedia.org/wiki/Sentiment_analysis">Wikipedia</a> 
+            </p>
+        </div>
+        <script src="/static/js/jquery-1.10.2.min.js"></script>
+        <script src="/static/js/smm.js"></script>
+        <script>
+            SMM.htmlHelpers();
+        </script>
+        
+    </body>
+</html>
