@@ -45,7 +45,9 @@ Create and save new classifier trained from collected tweets
 open 3 shells and type in each:
     
     python start-collector.py
+
     python start-classifier.py
+
     python start-server.py
     
 

@@ -9,8 +9,6 @@ setup(
     install_requires=[
         "requests",
         "requests_oauthlib",
-        "mongoengine-0.8.7",
-	"pymongo-2.8.1",
         "nltk",
         'numpy',
         'gevent',
